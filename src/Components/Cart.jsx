@@ -12,7 +12,7 @@ const Cart = () => {
         items.map((item) => (
           <div
             key={item.id}
-            className="cart-item w-[80%] mt-10 border shadow-md flex items-center gap-"
+            className="cart-item w-[80%] mt-10 border shadow-md flex items-center gap-4 mb-8"
           >
             <img
               src={item.image}
@@ -44,7 +44,7 @@ const Cart = () => {
           </div>
         ))
       ) : (
-        <p className="text-[50px] text-[#ff2020] text-center">
+        <p className="text-[50px] text-[#ff2020] text-center mb-24">
           Your Cart Is Empty.
         </p>
       )}

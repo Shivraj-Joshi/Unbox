@@ -1,74 +1,83 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="bg-black w-full h-[400px] p-4 flex  justify-center mt-6">
-        <div className=" w-[80%] h-[350px] flex justify-center items-center justify-evenly mt-3 ">
-          <div className=" w-[200px] h-[200px]">
-            <h3 className=" text-[#ff2025] font-[500] text-[28px]">
-              About us{" "}
-            </h3>
-            <p className="text-[18px] text-white ">
-              At UnBox, we are passionate about delivering exceptional shopping
-              experiences.
-            </p>
-          </div>
-          <div className=" w-[200px] h-[200px]">
-            <h3 className=" text-[#ff2025] font-[500] text-[28px]">
-              Quick Links
-            </h3>
+      <footer className="bg-black text-white py-10">
+        <div className="max-w-6xl mx-auto px-5">
+          <div className="grid grid-cols-4 gap-6">
+            {/* Shop Men */}
+            <div>
+              <h3 className="font-bold mb-3">Shop Men</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li className="hover:text-white cursor-pointer">
+                  Clothing Fashion
+                </li>
+                <li className="hover:text-white cursor-pointer">Winter</li>
+                <li className="hover:text-white cursor-pointer">Summer</li>
+                <li className="hover:text-white cursor-pointer">Formal</li>
+                <li className="hover:text-white cursor-pointer">Casual</li>
+              </ul>
+            </div>
 
-            <ul className=" text-white text-[18px] ">
-              <li>
-                <NavLink
-                  to=""
-                  //   className={({ isActive }) =>
-                  //     isActive ? "text-slate-200" : "text-black"
-                  //   }
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/product"
-                  //   className={({ isActive }) =>
-                  //     isActive ? "text-slate-200" : "text-black"
-                  //   }
-                >
-                  Product
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  //   className={({ isActive }) =>
-                  //     isActive ? "text-slate-200" : "text-black"
-                  //   }
-                >
-                  About us
-                </NavLink>
-              </li>{" "}
-            </ul>
+            {/* Shop Women */}
+            <div>
+              <h3 className="font-bold mb-3">Shop Women</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li className="hover:text-white cursor-pointer">
+                  Clothing Fashion
+                </li>
+                <li className="hover:text-white cursor-pointer">Winter</li>
+                <li className="hover:text-white cursor-pointer">Summer</li>
+                <li className="hover:text-white cursor-pointer">Formal</li>
+                <li className="hover:text-white cursor-pointer">Casual</li>
+              </ul>
+            </div>
+
+            {/* Baby Collection */}
+            <div>
+              <h3 className="font-bold mb-3">Quick Links</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li className="hover:text-white cursor-pointer">
+                  Track Your Order
+                </li>
+                <li className="hover:text-white cursor-pointer">Support</li>
+                <li className="hover:text-white cursor-pointer">FAQ</li>
+                <li className="hover:text-white cursor-pointer">Carrier</li>
+                <li className="hover:text-white cursor-pointer">About</li>
+                <li className="hover:text-white cursor-pointer">Contact Us</li>
+              </ul>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-bold mb-3">Follow us</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li className="hover:text-[#ff2020] cursor-pointer text-2xl">
+                  <i class="ri-facebook-circle-fill"></i>
+                </li>
+                <li className="hover:text-[#ff2020] cursor-pointer text-2xl">
+                  <i class="ri-instagram-line"></i>
+                </li>
+                <li className="hover:text-[#ff2020] cursor-pointer text-2xl">
+                  <i class="ri-twitter-x-line"></i>
+                </li>
+                {/* <li className="hover:text-white cursor-pointer">Formal</li>
+                <li className="hover:text-white cursor-pointer">Casual</li> */}
+              </ul>
+            </div>
           </div>
-          <div className=" w-[200px] h-[200px]">
-            <h3 className=" text-[#ff2025] font-[500] text-[28px]">
-              Follow us
-            </h3>
-            <p className=" text-white hover:text-[#ff2020] text-[22px] ">
-              <i class="ri-instagram-fill"></i>
-            </p>
-            <p className="text-white hover:text-[#ff2020] text-[22px] ">
-              <i class="ri-twitter-fill"></i>
-            </p>
-            <p className="hover:text-[#ff2020] text-white text-[22px] ">
-              <i class="ri-facebook-circle-fill"></i>
+
+          {/* Copyright Section */}
+          <div className="border-t border-gray-800 mt-8 pt-5 text-center text-gray-500 text-sm">
+            <p>
+              Copyright ©2025 All rights reserved UnBox |
+              <span className="text-red-500"> ❤️ </span>
+              {/* <span className="text-red-500 font-semibold"> Colorlib</span> */}
             </p>
           </div>
         </div>
-        {/* <p className="text-white">© 2025 UnBox All rights reserved.</p> */}
-      </div>
+      </footer>
     </>
   );
 };
